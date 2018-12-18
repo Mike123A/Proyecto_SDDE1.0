@@ -154,7 +154,7 @@ namespace Capa_Vista1
             btn_Vivencias.BackColor = Color.MidnightBlue;
             btn_Ordenes.BackColor = Color.MidnightBlue;
             btn_Documentos.BackColor = Color.MidnightBlue;
-            AbrirVentana(new Form_SW());
+            AbrirVentana(new Form_Altas());
         }
 
         private void btn_Documentos_Click(object sender, EventArgs e)
@@ -313,6 +313,11 @@ namespace Capa_Vista1
         }
 
         private void VentanaPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

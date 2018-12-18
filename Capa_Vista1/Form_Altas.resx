@@ -120,6 +120,58 @@
   <metadata name="printDocument1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJ
+        TUUH4gwSEQIF9wA9dgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGWSURBVEhL
+        tZVHTsQwFIbDBlYgBljQZkW5BHACyjEQDL0IjkDdU49BOQgdCSSWlEPwf04GhSTEzwN80jd6zjhxbD+/
+        RB6qcl5eyjv5kUh8IedkvwymT57IJ7ktR2SHrEPMtR1Jn2PZK01MyRe5JJu54IE+y5J7JrlQxoK8kgOu
+        FcagvJYsaSG8OQ9vd63G4F4Gyc2ENWeKjbx5FmbCs3pcK+FULsZhKdOJPlbkURzGqUgmWDZ0I9FHi3yW
+        rIzb2C0CA9YBYFfWCDgw5LSFkAFG5RnBo7RmTsgAnfKe4I2fDG1yXW5mZLaYvU7fVpmmSb4T8EMjzV8N
+        8ErwICsEBkKWqEveEvzXJo9Jt8mUXKqihZAB9uUMAfWcg8bh8GEd4NtBA+o5JdeHdYA1eRCHMXwsKFAU
+        qjKGE8vgf57V7VopKLGU2t+Ua7LxRo67VgF8LBjEN5MihiQPJ2lKmZBMkZJr2Xj6rEru+fHNs/CxoJ6T
+        CVRFChe1pQ6HiDzfk/Q5lLk1t0CazcpzyamkrCAxh4j/vlIxTxR9Aqu1V7xTU69aAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btn_asigSW.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJ
+        TUUH4gwSEDsN9p1SyQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADuSURBVEhL
+        7dWxSkJRAMbx42CDuPkGtgQtgQS1iatzb+HuC7Q5RFtIU2sGji4KoiCZFE46Va8gvYD/r86BQx3v9XLP
+        FH7ww8Ph+h8uiIZtMLX8875e8ACtgzGG6OlCD7j5531XhYv/acWMP+PKWukiFC/hNMUJND+uV9S2PnQR
+        itfxim6CT2h+fImF9aWLXfFrnENf/K0I96wfn9hP7fucFK/gMqCA3PELPAYcIVd8jtsE79Ayx8uopTiD
+        ljmeZYd4cId4cP8jPoP7kb3pImb8CX3cY62LmPFjjHCHpi5ixrUbDH6Ocf/9tQZaxhizBYj5kT17QHaj
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="button6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJ
+        TUUH4gsdFAkV5cv6dAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFFSURBVEhL
+        7ZaxK4VhFIc/ymQwKsnGJqtMBgaTkJLJomQxKWQwszDYxWawKZkUE4U/ye855771de89vns+q6ee+t37
+        fr9zeu/wdasBOJVf8rsmn2/ksPwTk/LJYw8XcsXjYGzIyy6f5WvXd8UHyU36nTGrhyl5K4/lYkvpMoNZ
+        fTmRmx5bQZcZIQdyx2Mr6DIjZFfuezRm5LhHg6vXr88ZzxToMiNkWx56NI7klkdjr2OBM54p0GVGyKo8
+        82hkF9BlRsiyPPdoZBfQZUbIgrz2aGQX0GVGyJzkFVDILqDLjJBpee/RyC6gy4yQCfno0cguoMuMkDH5
+        4tHILqDLjJAR+eHRyC54l8z4Fd73heyCejfkf0Ejn3LIY7UkZz0a8x0LnPEM0KHbyJsc9ZiCDt1GruS6
+        xxRrkm4j/JO4k/yeGenQrVFVP7g9ZCcL5iAjAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="button5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJ
+        TUUH4gsdFAg7IAbG+gAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADqSURBVEhL
+        7ZYhDsJAEEUrkSQYBCdAEILBcgQEmnAEFCdA4EhQnIJg0OAgoRYcohdAcAL+b3eaMtsmtN2CgJe8drrN
+        /J9U1QMBPCkfKWf0ZpTnM7ybWXYusA9jeKg5mLtmYhTqcBuN8U4TMjMucV1AXkqqKCAs4eeqrICE2b9V
+        MIY7uDAu4QYSJwU1OFC2IMlVsIfTnHJHk1nQhsOcckeTWeCKzxc04Bwe4Qx2IN+/I3e4ywyB59HFsIKj
+        aCwEd5khWAU+7JaUGYJVcIXrkjJDsAqSc1GsvH+B5rsFPXMvQzIjzE77bXGkFzwBt4WQzCXTn3EAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>
