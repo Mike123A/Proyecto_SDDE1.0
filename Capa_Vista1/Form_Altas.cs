@@ -17,6 +17,32 @@ namespace Capa_Vista1
             InitializeComponent();
         }
 
+           public void LlenarCombos()
+        {
+            //negCatComunes negcatcomunes = new negCatComunes();
+            //cmbMarca.DataSource = negcatcomunes.CargarDatosMarcas();
+            //cmbMarca.ValueMember = "idMarca";
+            //cmbMarca.DisplayMember = "Marca";
+            //cmbModelo.DataSource = negcatcomunes.CargarDatosModelos();
+            //cmbModelo.ValueMember = "idModelo";
+            //cmbModelo.DisplayMember = "Modelo";
+            //cmbEdificios.DataSource = negcatcomunes.CargarDatosEdificios();
+            //cmbEdificios.ValueMember = "idEdificios";
+            //cmbEdificios.DisplayMember = "Nombre_Edificio";
+        }
+        //public void AbrirVentana(object formhijo)
+        //{
+        //    Form fh = formhijo as Form;
+        //    fh.TopLevel = false;
+        //    this.panelcont2.Controls.Clear();
+        //    this.panelcont2.Controls.Add(fh);
+        //    this.panelcont2.Tag = fh;
+        //    fh.FormBorderStyle = FormBorderStyle.None;
+        //    fh.Dock = DockStyle.Fill;
+        //    fh.Show();
+        //    fh.WindowState = FormWindowState.Maximized;
+        //}
+
         private void Form_Altas_Load(object sender, EventArgs e)
         {
 
@@ -27,6 +53,15 @@ namespace Capa_Vista1
 
         }
 
-      
+        private void btn_asigSW_Click(object sender, EventArgs e)
+        {
+            Form_SW formsw = new Form_SW();
+            formsw.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -10,7 +10,7 @@ namespace Capa_Datos
 {
     class Conexion
     {
-        const string CadenaConexion = @"Data Source=localhost;Initial Catalog=bd_SDDE;Integrated Security=True";
+        const string CadenaConexion = @"Data Source=DESKTOP-N0LAFRF\SQLEXPRESS;Initial Catalog=bd_SDDE;Integrated Security=True";
         private static readonly SqlConnection conexion = new SqlConnection(CadenaConexion);
 
         public static SqlConnection AbrirConexion()
