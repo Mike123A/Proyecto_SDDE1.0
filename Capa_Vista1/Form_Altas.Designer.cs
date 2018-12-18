@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Altas));
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,7 +48,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.btn_imprimir = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -220,23 +219,21 @@
             this.label14.TabIndex = 65;
             this.label14.Text = "Altas";
             // 
-            // btn_imprimir
+            // button1
             // 
-            this.btn_imprimir.FlatAppearance.BorderSize = 0;
-            this.btn_imprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_imprimir.Image = ((System.Drawing.Image)(resources.GetObject("btn_imprimir.Image")));
-            this.btn_imprimir.Location = new System.Drawing.Point(488, 292);
-            this.btn_imprimir.Name = "btn_imprimir";
-            this.btn_imprimir.Size = new System.Drawing.Size(66, 34);
-            this.btn_imprimir.TabIndex = 67;
-            this.btn_imprimir.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(130, 305);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(73, 30);
+            this.button1.TabIndex = 66;
+            this.button1.Text = "Asignar";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form_Altas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(745, 347);
-            this.Controls.Add(this.btn_imprimir);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -287,6 +284,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label14;
         private System.Drawing.Printing.PrintDocument printDocument1;
-        private System.Windows.Forms.Button btn_imprimir;
+        private System.Windows.Forms.Button button1;
     }
 }
