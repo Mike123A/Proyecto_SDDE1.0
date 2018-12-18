@@ -25,17 +25,17 @@ namespace Capa_Vista1
             LlenarCombos();
             CargarDGV();
             limpiarobjetos();
-            hinabilitarrobjetos();
+            //hinabilitarrobjetos();
         }
         public void LlenarCombos()
         {
             negCatComunes negcatcomunes = new negCatComunes();
-            cmbMarca.DataSource = negcatcomunes.CargarDatosMarcas();
-            cmbMarca.ValueMember = "idMarca";
-            cmbMarca.DisplayMember = "Marca";
-            cmbModelo.DataSource = negcatcomunes.CargarDatosModelos();
-            cmbModelo.ValueMember = "idModelo";
-            cmbModelo.DisplayMember = "Modelo";
+            //cmbMarca.DataSource = negcatcomunes.CargarDatosMarcas();
+            //cmbMarca.ValueMember = "idMarca";
+            //cmbMarca.DisplayMember = "Marca";
+            //cmbModelo.DataSource = negcatcomunes.CargarDatosModelos();
+            //cmbModelo.ValueMember = "idModelo";
+            //cmbModelo.DisplayMember = "Modelo";
             cmbEdificios.DataSource = negcatcomunes.CargarDatosEdificios();
             cmbEdificios.ValueMember = "idEdificios";
             cmbEdificios.DisplayMember = "Nombre_Edificio";
@@ -48,9 +48,9 @@ namespace Capa_Vista1
             if (Nuevo)
             {
                 entswitch.Edificio = Convert.ToInt32(cmbEdificios.SelectedValue);
-                entswitch.Marca = Convert.ToInt32(cmbMarca.SelectedValue);
-                entswitch.Modelo = Convert.ToInt32(cmbModelo.SelectedValue);
-                entswitch.Serie = txtSerie.Text;
+                //entswitch.Marca = Convert.ToInt32(cmbMarca.SelectedValue);
+                //entswitch.Modelo = Convert.ToInt32(cmbModelo.SelectedValue);
+                //entswitch.Serie = txtSerie.Text;
                 if (rdbSSH.Checked)
                 {
                     entswitch.TConexion = "SSH";
@@ -59,7 +59,7 @@ namespace Capa_Vista1
                 {
                     entswitch.TConexion = "Telnet";
                 }
-                entswitch.Mac = txtMac.Text;
+                //entswitch.Mac = txtMac.Text;
                 entswitch.Ip = txtIp.Text;
                 entswitch.Mascara = txtMascara.Text;
                 entswitch.Gateway = txtGateway.Text;
@@ -68,11 +68,11 @@ namespace Capa_Vista1
             }
             else
             {
-                entswitch.idSwitch= Convert.ToInt32(dgvSwitches.CurrentRow.Cells["Clave"].Value.ToString());
+                //entswitch.idSwitch= Convert.ToInt32(dgvSwitches.CurrentRow.Cells["Clave"].Value.ToString());
                 entswitch.Edificio = Convert.ToInt32(cmbEdificios.SelectedValue);
-                entswitch.Marca = Convert.ToInt32(cmbMarca.SelectedValue);
-                entswitch.Modelo = Convert.ToInt32(cmbModelo.SelectedValue);
-                entswitch.Serie = txtSerie.Text;
+                //entswitch.Marca = Convert.ToInt32(cmbMarca.SelectedValue);
+                //entswitch.Modelo = Convert.ToInt32(cmbModelo.SelectedValue);
+                //entswitch.Serie = txtSerie.Text;
                 if (rdbSSH.Checked)
                 {
                     entswitch.TConexion = "SSH";
@@ -81,7 +81,7 @@ namespace Capa_Vista1
                 {
                     entswitch.TConexion = "Telnet";
                 }
-                entswitch.Mac = txtMac.Text;
+                //entswitch.Mac = txtMac.Text;
                 entswitch.Ip = txtIp.Text;
                 entswitch.Mascara = txtMascara.Text;
                 entswitch.Gateway = txtGateway.Text;
@@ -96,7 +96,7 @@ namespace Capa_Vista1
         {
             negSwitches negswitches = new negSwitches();
 
-            dgvSwitches.DataSource = negswitches.CargarDatos();
+            //dgvSwitches.DataSource = negswitches.CargarDatos();
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -107,12 +107,12 @@ namespace Capa_Vista1
         public void limpiarobjetos()
         {
             cmbEdificios.Text = "";
-            cmbMarca.Text = "";
-            cmbModelo.Text = "";
-            txtSerie.Text = "";
+            //cmbMarca.Text = "";
+            //cmbModelo.Text = "";
+            //txtSerie.Text = "";
             rdbSSH.Checked = false;
             rdbTelnet.Checked = false;
-            txtMac.Text = "";
+            //txtMac.Text = "";
             txtIp.Text = "";
             txtMascara.Text = "";
             txtGateway.Text = "";
@@ -121,12 +121,12 @@ namespace Capa_Vista1
         public void hinabilitarrobjetos()
         {
             cmbEdificios.Enabled = false;
-            cmbMarca.Enabled = false;
-            cmbModelo.Enabled = false;
-            txtSerie.Enabled = false;
+            //cmbMarca.Enabled = false;
+            //cmbModelo.Enabled = false;
+            //txtSerie.Enabled = false;
             rdbSSH.Enabled = false;
             rdbTelnet.Enabled = false;
-            txtMac.Enabled = false;
+            //txtMac.Enabled = false;
             txtIp.Enabled = false;
             txtMascara.Enabled = false;
             txtGateway.Enabled = false;
@@ -135,12 +135,12 @@ namespace Capa_Vista1
         public void habilitarrobjetos()
         {
             cmbEdificios.Enabled = true;
-            cmbMarca.Enabled = true;
-            cmbModelo.Enabled = true;
-            txtSerie.Enabled = true;
+            //cmbMarca.Enabled = true;
+            //cmbModelo.Enabled = true;
+            //txtSerie.Enabled = true;
             rdbSSH.Enabled = true;
             rdbTelnet.Enabled = true;
-            txtMac.Enabled = true;
+            //txtMac.Enabled = true;
             txtIp.Enabled = true;
             txtMascara.Enabled = true;
             txtGateway.Enabled = true;
@@ -149,34 +149,32 @@ namespace Capa_Vista1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Nuevo = true;
-            habilitarrobjetos();
-            limpiarobjetos();
+            this.Close();
         }
 
         private void dgvSwitches_SelectionChanged(object sender, EventArgs e)
         {
-            limpiarobjetos();
-            cmbEdificios.Text = dgvSwitches.CurrentRow.Cells["Edificio"].Value.ToString();
-            cmbMarca.Text = dgvSwitches.CurrentRow.Cells["Marca"].Value.ToString();
-            cmbModelo.Text = dgvSwitches.CurrentRow.Cells["Modelo"].Value.ToString();
-            txtSerie.Text = dgvSwitches.CurrentRow.Cells["Serie"].Value.ToString();
-            if (dgvSwitches.CurrentRow.Cells["Conexion"].Value.ToString() == "SSH")
-                rdbSSH.Checked = true;
-            if (dgvSwitches.CurrentRow.Cells["Conexion"].Value.ToString() == "Telnet")
-                rdbTelnet.Checked = true;
-            txtMac.Text = dgvSwitches.CurrentRow.Cells["Mac"].Value.ToString();
-            txtIp.Text = dgvSwitches.CurrentRow.Cells["Ip"].Value.ToString();
-            txtMascara.Text = dgvSwitches.CurrentRow.Cells["Mascara"].Value.ToString();
-            txtGateway.Text = dgvSwitches.CurrentRow.Cells["Gateway"].Value.ToString();
-            cmbSite.Text = dgvSwitches.CurrentRow.Cells["Site"].Value.ToString();
+            //    limpiarobjetos();
+            //    cmbEdificios.Text = dgvSwitches.CurrentRow.Cells["Edificio"].Value.ToString();
+            //    cmbMarca.Text = dgvSwitches.CurrentRow.Cells["Marca"].Value.ToString();
+            //    cmbModelo.Text = dgvSwitches.CurrentRow.Cells["Modelo"].Value.ToString();
+            //    txtSerie.Text = dgvSwitches.CurrentRow.Cells["Serie"].Value.ToString();
+            //    if (dgvSwitches.CurrentRow.Cells["Conexion"].Value.ToString() == "SSH")
+            //        rdbSSH.Checked = true;
+            //    if (dgvSwitches.CurrentRow.Cells["Conexion"].Value.ToString() == "Telnet")
+            //        rdbTelnet.Checked = true;
+            //    txtMac.Text = dgvSwitches.CurrentRow.Cells["Mac"].Value.ToString();
+            //    txtIp.Text = dgvSwitches.CurrentRow.Cells["Ip"].Value.ToString();
+            //    txtMascara.Text = dgvSwitches.CurrentRow.Cells["Mascara"].Value.ToString();
+            //    txtGateway.Text = dgvSwitches.CurrentRow.Cells["Gateway"].Value.ToString();
+            //    cmbSite.Text = dgvSwitches.CurrentRow.Cells["Site"].Value.ToString();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             negSwitches negswitches = new negSwitches();
             entSwitches entswitches = new entSwitches();
-            entswitches.idSwitch = Convert.ToInt32(dgvSwitches.CurrentRow.Cells["Clave"].Value.ToString());
+            //entswitches.idSwitch = Convert.ToInt32(dgvSwitches.CurrentRow.Cells["Clave"].Value.ToString());
             negswitches.EliminaDato(entswitches);
             CargarDGV();
         }

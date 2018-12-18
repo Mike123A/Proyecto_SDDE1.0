@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Altas_Radio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Altas_Radio.Designer.cs">
+      <DependentUpon>Altas_Radio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,11 +103,11 @@
     <Compile Include="Form_Ordenes.Designer.cs">
       <DependentUpon>Form_Ordenes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Radio.cs">
+    <Compile Include="Form_Radio2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Radio.Designer.cs">
-      <DependentUpon>Form_Radio.cs</DependentUpon>
+    <Compile Include="Form_Radio2.Designer.cs">
+      <DependentUpon>Form_Radio2.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_Reportes.cs">
       <SubType>Form</SubType>
@@ -153,6 +159,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Altas_Radio.resx">
+      <DependentUpon>Altas_Radio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Usuarios.resx">
       <DependentUpon>Form_Usuarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,8 +186,8 @@
     <EmbeddedResource Include="Form_Ordenes.resx">
       <DependentUpon>Form_Ordenes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Radio.resx">
-      <DependentUpon>Form_Radio.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Radio2.resx">
+      <DependentUpon>Form_Radio2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Reportes.resx">
       <DependentUpon>Form_Reportes.cs</DependentUpon>

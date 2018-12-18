@@ -129,7 +129,7 @@ namespace Capa_Vista1
         {
             lbl_Identificador_Apartado.Text = "Radios";
 
-            AbrirVentana(new Form_Radio());
+            AbrirVentana(new Form_Radio2());
 
             RegrasarBotones();
 

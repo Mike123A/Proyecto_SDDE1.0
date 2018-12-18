@@ -380,6 +380,7 @@
             this.label3.Size = new System.Drawing.Size(308, 29);
             this.label3.TabIndex = 0;
             this.label3.Text = "Sistema Departamental SDDE \\";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // VentanaPrincipal
             // 
