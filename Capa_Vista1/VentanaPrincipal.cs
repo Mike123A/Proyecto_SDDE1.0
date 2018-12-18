@@ -184,7 +184,8 @@ namespace Capa_Vista1
             btn_Vivencias.BackColor = Color.MidnightBlue;
             btn_Ordenes.BackColor = Color.MidnightBlue;
             btn_Documentos.BackColor = Color.MidnightBlue;
-            AbrirVentana(new Form_Radio());
+            //AbrirVentana(new Form_Altas());
+            AbrirVentana(new Altas_Radio());
         }
 
         private void btn_AP_Click(object sender, EventArgs e)

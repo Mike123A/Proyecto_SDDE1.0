@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Altas_Radio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Altas_Radio.Designer.cs">
+      <DependentUpon>Altas_Radio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Altas_Radio.resx">
+      <DependentUpon>Altas_Radio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Usuarios.resx">
       <DependentUpon>Form_Usuarios.cs</DependentUpon>
     </EmbeddedResource>
