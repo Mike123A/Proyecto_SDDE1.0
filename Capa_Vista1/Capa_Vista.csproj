@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Altas_AP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Altas_AP.Designer.cs">
+      <DependentUpon>Altas_AP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Altas_Radio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,11 +109,11 @@
     <Compile Include="Form_Ordenes.Designer.cs">
       <DependentUpon>Form_Ordenes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Radio.cs">
+    <Compile Include="Form_Radio2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Radio.Designer.cs">
-      <DependentUpon>Form_Radio.cs</DependentUpon>
+    <Compile Include="Form_Radio2.Designer.cs">
+      <DependentUpon>Form_Radio2.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_Reportes.cs">
       <SubType>Form</SubType>
@@ -145,11 +151,47 @@
     <Compile Include="Form_Vent_Principal.Designer.cs">
       <DependentUpon>Form_Vent_Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="MiniVentanas\Min_Modelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiniVentanas\Min_Modelo.Designer.cs">
+      <DependentUpon>Min_Modelo.cs</DependentUpon>
+    </Compile>
     <Compile Include="MiniVentanas\Min_Marca.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MiniVentanas\Min_Marca.Designer.cs">
       <DependentUpon>Min_Marca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiniVentanas\Min_Modo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiniVentanas\Min_Modo.Designer.cs">
+      <DependentUpon>Min_Modo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiniVentanas\Min_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiniVentanas\Min_Proveedor.Designer.cs">
+      <DependentUpon>Min_Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiniVentanas\Min_seguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiniVentanas\Min_seguridad.Designer.cs">
+      <DependentUpon>Min_seguridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiniVentanas\Min_site.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiniVentanas\Min_site.Designer.cs">
+      <DependentUpon>Min_site.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiniVentanas\Min_SSDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiniVentanas\Min_SSDI.Designer.cs">
+      <DependentUpon>Min_SSDI.cs</DependentUpon>
     </Compile>
     <Compile Include="VentanaPrincipal.cs">
       <SubType>Form</SubType>
@@ -159,6 +201,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Altas_AP.resx">
+      <DependentUpon>Altas_AP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Altas_Radio.resx">
       <DependentUpon>Altas_Radio.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,8 +231,8 @@
     <EmbeddedResource Include="Form_Ordenes.resx">
       <DependentUpon>Form_Ordenes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Radio.resx">
-      <DependentUpon>Form_Radio.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Radio2.resx">
+      <DependentUpon>Form_Radio2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Reportes.resx">
       <DependentUpon>Form_Reportes.cs</DependentUpon>
@@ -207,8 +252,26 @@
     <EmbeddedResource Include="Form_Vent_Principal.resx">
       <DependentUpon>Form_Vent_Principal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MiniVentanas\Min_Modelo.resx">
+      <DependentUpon>Min_Modelo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MiniVentanas\Min_Marca.resx">
       <DependentUpon>Min_Marca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiniVentanas\Min_Modo.resx">
+      <DependentUpon>Min_Modo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiniVentanas\Min_Proveedor.resx">
+      <DependentUpon>Min_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiniVentanas\Min_seguridad.resx">
+      <DependentUpon>Min_seguridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiniVentanas\Min_site.resx">
+      <DependentUpon>Min_site.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiniVentanas\Min_SSDI.resx">
+      <DependentUpon>Min_SSDI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VentanaPrincipal.resx">
       <DependentUpon>VentanaPrincipal.cs</DependentUpon>

@@ -35,6 +35,37 @@ namespace Capa_Datos
             }
             Conexion.CerrarConexion();
         }
+
+        public void InsertarSite(string Site)
+        {
+            var comando = new SqlCommand("INSERT INTO[dbo].[Cat_Site]([Site])VALUES ('" + Site + "')", Conexion.AbrirConexion());
+            try
+            {
+                comando.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            Conexion.CerrarConexion();
+        }
+
+
+        public void InsertarModo(string Modo)
+        {
+            var comando = new SqlCommand("INSERT INTO[dbo].[Cat_Modo]([Modo])VALUES ('" + Modo + "')", Conexion.AbrirConexion());
+            try
+            {
+                comando.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            Conexion.CerrarConexion();
+        }
         public DataTable CargarDatosEdificios()
         {
             DataTable dtd = new DataTable();
@@ -54,6 +85,35 @@ namespace Capa_Datos
             dtd.Load(dr);
             Conexion.CerrarConexion();
             return dtd;
+        }
+        public void InsertarModelo(string Modelo)
+        {
+            var comando = new SqlCommand("INSERT INTO[dbo].[Cat_Modelo]([Modelo])VALUES ('" + Modelo + "')", Conexion.AbrirConexion());
+            try
+            {
+                comando.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            Conexion.CerrarConexion();
+        }
+
+        public void InsertarProveedor(string Proveedor)
+        {
+            var comando = new SqlCommand("INSERT INTO[dbo].[Cat_Proveedor]([Proveedor])VALUES ('" + Proveedor + "')", Conexion.AbrirConexion());
+            try
+            {
+                comando.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            Conexion.CerrarConexion();
         }
         public DataTable CargarDatosSites(int edificio)
         {
@@ -75,6 +135,23 @@ namespace Capa_Datos
             Conexion.CerrarConexion();
             return dtd;
         }
+        public void InsertarSDDI(string SSID)
+        {
+            var comando = new SqlCommand("INSERT INTO[dbo].[Cat_SSID]([SSID])VALUES ('" + SSID + "')", Conexion.AbrirConexion());
+            try
+            {
+                comando.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            Conexion.CerrarConexion();
+        }
+
+        /// /////////////////////
+     
         public DataTable CargarDatosSeguridad()
         {
             DataTable dtd = new DataTable();

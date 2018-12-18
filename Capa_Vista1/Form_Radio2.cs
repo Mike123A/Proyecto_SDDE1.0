@@ -12,10 +12,10 @@ using Capa_Negocios;
 
 namespace Capa_Vista1
 {
-    public partial class Form_Radio : Form
+    public partial class Form_Radio2 : Form
     {
         bool Nuevo;
-        public Form_Radio()
+        public Form_Radio2()
         {
             InitializeComponent();
         }
@@ -30,24 +30,24 @@ namespace Capa_Vista1
         public void LlenarCombos()
         {
             negCatComunes negcatcomunes = new negCatComunes();
-            cmbEdificio.DataSource = negcatcomunes.CargarDatosEdificios();
-            cmbEdificio.ValueMember = "idEdificios";
-            cmbEdificio.DisplayMember = "Nombre_Edificio";
+            //cmbEdificio.DataSource = negcatcomunes.CargarDatosEdificios();
+            //cmbEdificio.ValueMember = "idEdificios";
+            //cmbEdificio.DisplayMember = "Nombre_Edificio";
             //cmbMarca.DataSource = negcatcomunes.CargarDatosMarcas();
             //cmbMarca.ValueMember = "idMarca";
             //cmbMarca.DisplayMember = "Marca";
             //cmbModelo.DataSource = negcatcomunes.CargarDatosModelos();
             //cmbModelo.ValueMember = "idModelo";
             //cmbModelo.DisplayMember = "Modelo";
-            cmbSSID.DataSource = negcatcomunes.CargarDatosSSID();
-            cmbSSID.ValueMember = "idSSID";
-            cmbSSID.DisplayMember = "SSID";
-            cmbSeguridad.DataSource = negcatcomunes.CargarDatosSeguridad();
-            cmbSeguridad.ValueMember = "idSeguridad";
-            cmbSeguridad.DisplayMember = "Seguridad";
-            cmbModo.DataSource = negcatcomunes.CargarDatosModo();
-            cmbModo.ValueMember = "idModo";
-            cmbModo.DisplayMember = "Modo";
+            //cmbSSID.DataSource = negcatcomunes.CargarDatosSSID();
+            //cmbSSID.ValueMember = "idSSID";
+            //cmbSSID.DisplayMember = "SSID";
+            //cmbSeguridad.DataSource = negcatcomunes.CargarDatosSeguridad();
+            //cmbSeguridad.ValueMember = "idSeguridad";
+            //cmbSeguridad.DisplayMember = "Seguridad";
+            //cmbModo.DataSource = negcatcomunes.CargarDatosModo();
+            //cmbModo.ValueMember = "idModo";
+            //cmbModo.DisplayMember = "Modo";
         }
         public void CargarDGV()
         {
@@ -56,48 +56,48 @@ namespace Capa_Vista1
         }
         public void InhabilitarObjetos()
         {
-            cmbEdificio.Enabled = false;
-            //cmbMarca.Enabled = false;
-            //cmbModelo.Enabled = false;
-            txtHostName.Enabled = false;
-            //cmbSSID.Enabled = false;
-            //txtSerie.Enabled = false;
-            //txtMac.Enabled = false;
-            txtIp.Enabled = false;
-            txtMascara.Enabled = false;
-            txtGateway.Enabled = false;
-            cmbSeguridad.Enabled = false;
-            cmbModo.Enabled = false;
+            //cmbEdificio.Enabled = false;
+            ////cmbMarca.Enabled = false;
+            ////cmbModelo.Enabled = false;
+            //txtHostName.Enabled = false;
+            ////cmbSSID.Enabled = false;
+            ////txtSerie.Enabled = false;
+            ////txtMac.Enabled = false;
+            //txtIp.Enabled = false;
+            //txtMascara.Enabled = false;
+            //txtGateway.Enabled = false;
+            //cmbSeguridad.Enabled = false;
+            //cmbModo.Enabled = false;
         }
         public void HabilitarObjetos()
         {
-            cmbEdificio.Enabled = true;
-            //cmbMarca.Enabled = true;
-            //cmbModelo.Enabled = true;
-            txtHostName.Enabled = true;
-            cmbSSID.Enabled = true;
-            //txtSerie.Enabled = true;
-            //txtMac.Enabled = true;
-            txtIp.Enabled = true;
-            txtMascara.Enabled = true;
-            txtGateway.Enabled = true;
-            cmbSeguridad.Enabled = true;
-            cmbModo.Enabled = true;
+            //cmbEdificio.Enabled = true;
+            ////cmbMarca.Enabled = true;
+            ////cmbModelo.Enabled = true;
+            //txtHostName.Enabled = true;
+            //cmbSSID.Enabled = true;
+            ////txtSerie.Enabled = true;
+            ////txtMac.Enabled = true;
+            //txtIp.Enabled = true;
+            //txtMascara.Enabled = true;
+            //txtGateway.Enabled = true;
+            //cmbSeguridad.Enabled = true;
+            //cmbModo.Enabled = true;
         }
         public void LimpiarObjetos()
         {
-            cmbEdificio.Text = "";
-            //cmbMarca.Text = "";
-            //cmbModelo.Text = "";
-            txtHostName.Text = "";
-            cmbSSID.Text = "";
-            //txtSerie.Text = "";
-            //txtMac.Text = "";
-            txtIp.Text = "";
-            txtMascara.Text = "";
-            txtGateway.Text = "";
-            cmbSeguridad.Text = "";
-            cmbModo.Text = "";
+            //cmbEdificio.Text = "";
+            ////cmbMarca.Text = "";
+            ////cmbModelo.Text = "";
+            //txtHostName.Text = "";
+            //cmbSSID.Text = "";
+            ////txtSerie.Text = "";
+            ////txtMac.Text = "";
+            //txtIp.Text = "";
+            //txtMascara.Text = "";
+            //txtGateway.Text = "";
+            //cmbSeguridad.Text = "";
+            //cmbModo.Text = "";
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -111,18 +111,18 @@ namespace Capa_Vista1
         {
             negRadios negradios = new negRadios();
             entRadio entradio = new entRadio();
-            entradio.Edificio = Convert.ToInt32(cmbEdificio.SelectedValue);
+            //entradio.Edificio = Convert.ToInt32(cmbEdificio.SelectedValue);
             //entradio.Marca = Convert.ToInt32(cmbMarca.SelectedValue);
             //entradio.Modelo = Convert.ToInt32(cmbModelo.SelectedValue);
-            entradio.HostName = txtHostName.Text;
-            entradio.SSID = Convert.ToInt32(cmbSSID.SelectedValue);
+            //entradio.HostName = txtHostName.Text;
+            //entradio.SSID = Convert.ToInt32(cmbSSID.SelectedValue);
             //entradio.Serie = txtSerie.Text;
             //entradio.Mac = txtMac.Text;
-            entradio.Ip = txtIp.Text;
-            entradio.Mascara = txtMascara.Text;
-            entradio.Gateway = txtGateway.Text;
-            entradio.Seguridad = Convert.ToInt32(cmbSeguridad.SelectedValue);
-            entradio.Modo = Convert.ToInt32(cmbModo.SelectedValue);
+            //entradio.Ip = txtIp.Text;
+            //entradio.Mascara = txtMascara.Text;
+            //entradio.Gateway = txtGateway.Text;
+            //entradio.Seguridad = Convert.ToInt32(cmbSeguridad.SelectedValue);
+            //entradio.Modo = Convert.ToInt32(cmbModo.SelectedValue);
             if (Nuevo)
             {
                 negradios.InsertarDato(entradio);
@@ -182,6 +182,30 @@ namespace Capa_Vista1
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btn_asigSW_Click(object sender, EventArgs e)
+        {
+            Altas_Radio formrd = new Altas_Radio();
+            formrd.Show();
+        }
+
+        private void mas_Modelo_Click(object sender, EventArgs e)
+        {
+            MiniVentanas.Min_Modelo form = new MiniVentanas.Min_Modelo();
+            form.Show();
+        }
+
+        private void mas_Marca_Click(object sender, EventArgs e)
+        {
+            MiniVentanas.Min_Marca form = new MiniVentanas.Min_Marca();
+            form.Show();
+        }
+
+        private void Mas_proveedor_Click(object sender, EventArgs e)
+        {
+            MiniVentanas.Min_Proveedor form = new MiniVentanas.Min_Proveedor();
+            form.Show();
         }
     }
 }

@@ -32,18 +32,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -56,6 +52,11 @@
             this.button5 = new System.Windows.Forms.Button();
             this.txtMac = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.Mas_proveedor = new System.Windows.Forms.Button();
+            this.mas_Marca = new System.Windows.Forms.Button();
+            this.mas_Modelo = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSwitches)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,28 +87,11 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Folio";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(174, 123);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(85, 158);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 18);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Equipo";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(85, 192);
+            this.label4.Location = new System.Drawing.Point(86, 161);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 18);
             this.label4.TabIndex = 5;
@@ -117,7 +101,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(85, 224);
+            this.label5.Location = new System.Drawing.Point(86, 193);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(42, 18);
             this.label5.TabIndex = 6;
@@ -127,7 +111,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(339, 126);
+            this.label6.Location = new System.Drawing.Point(365, 126);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(50, 18);
             this.label6.TabIndex = 7;
@@ -137,7 +121,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(338, 227);
+            this.label7.Location = new System.Drawing.Point(364, 227);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(77, 18);
             this.label7.TabIndex = 8;
@@ -147,7 +131,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(338, 195);
+            this.label8.Location = new System.Drawing.Point(364, 195);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(51, 18);
             this.label8.TabIndex = 9;
@@ -157,24 +141,16 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(338, 161);
+            this.label9.Location = new System.Drawing.Point(364, 161);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(58, 18);
             this.label9.TabIndex = 10;
             this.label9.Text = "Factura";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(174, 154);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 11;
-            // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(174, 189);
+            this.comboBox2.Location = new System.Drawing.Point(175, 158);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 12;
@@ -182,37 +158,29 @@
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(433, 123);
+            this.comboBox3.Location = new System.Drawing.Point(459, 123);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(121, 21);
             this.comboBox3.TabIndex = 13;
             // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(434, 158);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
-            this.comboBox4.TabIndex = 14;
-            // 
             // comboBox5
             // 
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(434, 224);
+            this.comboBox5.Location = new System.Drawing.Point(460, 224);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(121, 21);
             this.comboBox5.TabIndex = 15;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(174, 225);
+            this.textBox2.Location = new System.Drawing.Point(175, 194);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(121, 20);
             this.textBox2.TabIndex = 16;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(434, 192);
+            this.textBox3.Location = new System.Drawing.Point(460, 192);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(121, 20);
             this.textBox3.TabIndex = 17;
@@ -295,7 +263,7 @@
             // 
             // txtMac
             // 
-            this.txtMac.Location = new System.Drawing.Point(174, 255);
+            this.txtMac.Location = new System.Drawing.Point(175, 224);
             this.txtMac.Name = "txtMac";
             this.txtMac.Size = new System.Drawing.Size(121, 20);
             this.txtMac.TabIndex = 119;
@@ -304,17 +272,71 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(84, 256);
+            this.label10.Location = new System.Drawing.Point(85, 225);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(37, 18);
             this.label10.TabIndex = 118;
             this.label10.Text = "Mac";
+            // 
+            // Mas_proveedor
+            // 
+            this.Mas_proveedor.FlatAppearance.BorderSize = 0;
+            this.Mas_proveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Mas_proveedor.Image = ((System.Drawing.Image)(resources.GetObject("Mas_proveedor.Image")));
+            this.Mas_proveedor.Location = new System.Drawing.Point(584, 225);
+            this.Mas_proveedor.Name = "Mas_proveedor";
+            this.Mas_proveedor.Size = new System.Drawing.Size(31, 23);
+            this.Mas_proveedor.TabIndex = 140;
+            this.Mas_proveedor.UseVisualStyleBackColor = true;
+            this.Mas_proveedor.Click += new System.EventHandler(this.Mas_proveedor_Click);
+            // 
+            // mas_Marca
+            // 
+            this.mas_Marca.FlatAppearance.BorderSize = 0;
+            this.mas_Marca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mas_Marca.Image = ((System.Drawing.Image)(resources.GetObject("mas_Marca.Image")));
+            this.mas_Marca.Location = new System.Drawing.Point(584, 120);
+            this.mas_Marca.Name = "mas_Marca";
+            this.mas_Marca.Size = new System.Drawing.Size(31, 23);
+            this.mas_Marca.TabIndex = 141;
+            this.mas_Marca.UseVisualStyleBackColor = true;
+            this.mas_Marca.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // mas_Modelo
+            // 
+            this.mas_Modelo.FlatAppearance.BorderSize = 0;
+            this.mas_Modelo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mas_Modelo.Image = ((System.Drawing.Image)(resources.GetObject("mas_Modelo.Image")));
+            this.mas_Modelo.Location = new System.Drawing.Point(299, 159);
+            this.mas_Modelo.Name = "mas_Modelo";
+            this.mas_Modelo.Size = new System.Drawing.Size(31, 23);
+            this.mas_Modelo.TabIndex = 143;
+            this.mas_Modelo.UseVisualStyleBackColor = true;
+            this.mas_Modelo.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(459, 162);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(121, 20);
+            this.textBox4.TabIndex = 144;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(174, 123);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(121, 20);
+            this.textBox1.TabIndex = 3;
             // 
             // Form_Altas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(745, 582);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.mas_Modelo);
+            this.Controls.Add(this.mas_Marca);
+            this.Controls.Add(this.Mas_proveedor);
             this.Controls.Add(this.txtMac);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.button2);
@@ -326,17 +348,14 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTimePicker1);
@@ -356,18 +375,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
@@ -380,5 +395,10 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.TextBox txtMac;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button Mas_proveedor;
+        private System.Windows.Forms.Button mas_Marca;
+        private System.Windows.Forms.Button mas_Modelo;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
