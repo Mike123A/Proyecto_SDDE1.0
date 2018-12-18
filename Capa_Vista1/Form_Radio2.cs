@@ -189,5 +189,23 @@ namespace Capa_Vista1
             Altas_Radio formrd = new Altas_Radio();
             formrd.Show();
         }
+
+        private void mas_Modelo_Click(object sender, EventArgs e)
+        {
+            MiniVentanas.Min_Modelo form = new MiniVentanas.Min_Modelo();
+            form.Show();
+        }
+
+        private void mas_Marca_Click(object sender, EventArgs e)
+        {
+            MiniVentanas.Min_Marca form = new MiniVentanas.Min_Marca();
+            form.Show();
+        }
+
+        private void Mas_proveedor_Click(object sender, EventArgs e)
+        {
+            MiniVentanas.Min_Proveedor form = new MiniVentanas.Min_Proveedor();
+            form.Show();
+        }
     }
 }

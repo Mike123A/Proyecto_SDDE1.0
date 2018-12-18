@@ -63,5 +63,24 @@ namespace Capa_Vista1
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MiniVentanas.Min_Marca form = new MiniVentanas.Min_Marca();
+            form.Show();
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MiniVentanas.Min_Modelo form = new MiniVentanas.Min_Modelo();
+            form.Show();
+        }
+
+        private void Mas_proveedor_Click(object sender, EventArgs e)
+        {
+            MiniVentanas.Min_Proveedor form = new MiniVentanas.Min_Proveedor();
+            form.Show();
+        }
     }
 }

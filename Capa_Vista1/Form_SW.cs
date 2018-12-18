@@ -199,5 +199,10 @@ namespace Capa_Vista1
             cmbSite.ValueMember = "idSite";
             cmbSite.DisplayMember = "NSite";
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

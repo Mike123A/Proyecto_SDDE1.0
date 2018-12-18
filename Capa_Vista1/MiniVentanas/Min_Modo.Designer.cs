@@ -1,6 +1,6 @@
 ﻿namespace Capa_Vista1.MiniVentanas
 {
-    partial class Min_Marca
+    partial class Min_Modo
     {
         /// <summary>
         /// Required designer variable.
@@ -28,35 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Min_Marca));
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtMarca = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Min_Modo));
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtModo = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(27, 63);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 18);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Marca:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // txtMarca
-            // 
-            this.txtMarca.Location = new System.Drawing.Point(107, 64);
-            this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(147, 20);
-            this.txtMarca.TabIndex = 2;
-            this.txtMarca.TextChanged += new System.EventHandler(this.txtMarca_TextChanged);
             // 
             // btnGuardar
             // 
@@ -64,36 +45,24 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(138, 125);
+            this.btnGuardar.Location = new System.Drawing.Point(137, 125);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(80, 34);
-            this.btnGuardar.TabIndex = 61;
+            this.btnGuardar.TabIndex = 179;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(250, 8);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 23);
-            this.label3.TabIndex = 34;
-            this.label3.Text = "Marca";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(-1, 0);
+            this.panel1.Location = new System.Drawing.Point(-2, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(342, 36);
-            this.panel1.TabIndex = 169;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panel1.TabIndex = 180;
             // 
             // label4
             // 
@@ -106,35 +75,62 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Sistema Departamental SDDE \\";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(250, 8);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 23);
+            this.label3.TabIndex = 34;
+            this.label3.Text = "Modo";
+            // 
+            // txtModo
+            // 
+            this.txtModo.Location = new System.Drawing.Point(106, 64);
+            this.txtModo.Name = "txtModo";
+            this.txtModo.Size = new System.Drawing.Size(147, 20);
+            this.txtModo.TabIndex = 178;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(26, 63);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 18);
+            this.label2.TabIndex = 177;
+            this.label2.Text = "Modo:";
+            // 
             // button1
             // 
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(229, 125);
+            this.button1.Location = new System.Drawing.Point(228, 125);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(80, 34);
-            this.button1.TabIndex = 171;
+            this.button1.TabIndex = 181;
             this.button1.Text = "Cancelar";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Min_Marca
+            // Min_Modo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(327, 181);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(338, 182);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.txtMarca);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.txtModo);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Min_Marca";
-            this.Text = "Min_Marca";
-            this.Load += new System.EventHandler(this.Min_Marca_Load);
+            this.Name = "Min_Modo";
+            this.Text = "Min_Modo";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -143,12 +139,13 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtMarca;
+
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtModo;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
     }
 }

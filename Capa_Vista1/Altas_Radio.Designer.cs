@@ -127,6 +127,7 @@
             this.button8.Size = new System.Drawing.Size(31, 23);
             this.button8.TabIndex = 164;
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // cmbModo
             // 
@@ -166,6 +167,7 @@
             this.button4.Size = new System.Drawing.Size(31, 23);
             this.button4.TabIndex = 160;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // btn_Agre_Conex
             // 
@@ -177,6 +179,7 @@
             this.btn_Agre_Conex.Size = new System.Drawing.Size(31, 23);
             this.btn_Agre_Conex.TabIndex = 159;
             this.btn_Agre_Conex.UseVisualStyleBackColor = true;
+            this.btn_Agre_Conex.Click += new System.EventHandler(this.btn_Agre_Conex_Click);
             // 
             // cmbSeguridad
             // 
