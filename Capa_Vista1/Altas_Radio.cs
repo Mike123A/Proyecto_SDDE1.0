@@ -17,10 +17,10 @@ namespace Capa_Vista1
             InitializeComponent();
         }
 
-        private void btn_asigSW_Click(object sender, EventArgs e)
+      
+        private void button1_Click(object sender, EventArgs e)
         {
-            Form_Radio formsw = new Form_Radio();
-            formsw.Show();
+            this.Close();
         }
     }
 }
