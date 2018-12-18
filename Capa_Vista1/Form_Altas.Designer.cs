@@ -223,9 +223,9 @@
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(23, 29);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(50, 24);
+            this.label14.Size = new System.Drawing.Size(101, 24);
             this.label14.TabIndex = 65;
-            this.label14.Text = "Altas";
+            this.label14.Text = "Alta Switch";
             // 
             // button2
             // 

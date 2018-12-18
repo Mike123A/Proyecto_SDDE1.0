@@ -23,7 +23,7 @@ namespace Capa_Vista1
         private void Form_Radio_Load(object sender, EventArgs e)
         {
             LlenarCombos();
-            CargarDGV();
+            //CargarDGV();
             InhabilitarObjetos();
             LimpiarObjetos();
         }
@@ -33,12 +33,12 @@ namespace Capa_Vista1
             cmbEdificio.DataSource = negcatcomunes.CargarDatosEdificios();
             cmbEdificio.ValueMember = "idEdificios";
             cmbEdificio.DisplayMember = "Nombre_Edificio";
-            cmbMarca.DataSource = negcatcomunes.CargarDatosMarcas();
-            cmbMarca.ValueMember = "idMarca";
-            cmbMarca.DisplayMember = "Marca";
-            cmbModelo.DataSource = negcatcomunes.CargarDatosModelos();
-            cmbModelo.ValueMember = "idModelo";
-            cmbModelo.DisplayMember = "Modelo";
+            //cmbMarca.DataSource = negcatcomunes.CargarDatosMarcas();
+            //cmbMarca.ValueMember = "idMarca";
+            //cmbMarca.DisplayMember = "Marca";
+            //cmbModelo.DataSource = negcatcomunes.CargarDatosModelos();
+            //cmbModelo.ValueMember = "idModelo";
+            //cmbModelo.DisplayMember = "Modelo";
             cmbSSID.DataSource = negcatcomunes.CargarDatosSSID();
             cmbSSID.ValueMember = "idSSID";
             cmbSSID.DisplayMember = "SSID";
@@ -52,17 +52,17 @@ namespace Capa_Vista1
         public void CargarDGV()
         {
             negRadios negradios = new negRadios();
-            dgvRadios.DataSource = negradios.CargarDatos();
+            //dgvRadios.DataSource = negradios.CargarDatos();
         }
         public void InhabilitarObjetos()
         {
             cmbEdificio.Enabled = false;
-            cmbMarca.Enabled = false;
-            cmbModelo.Enabled = false;
+            //cmbMarca.Enabled = false;
+            //cmbModelo.Enabled = false;
             txtHostName.Enabled = false;
-            cmbSSID.Enabled = false;
-            txtSerie.Enabled = false;
-            txtMac.Enabled = false;
+            //cmbSSID.Enabled = false;
+            //txtSerie.Enabled = false;
+            //txtMac.Enabled = false;
             txtIp.Enabled = false;
             txtMascara.Enabled = false;
             txtGateway.Enabled = false;
@@ -72,12 +72,12 @@ namespace Capa_Vista1
         public void HabilitarObjetos()
         {
             cmbEdificio.Enabled = true;
-            cmbMarca.Enabled = true;
-            cmbModelo.Enabled = true;
+            //cmbMarca.Enabled = true;
+            //cmbModelo.Enabled = true;
             txtHostName.Enabled = true;
             cmbSSID.Enabled = true;
-            txtSerie.Enabled = true;
-            txtMac.Enabled = true;
+            //txtSerie.Enabled = true;
+            //txtMac.Enabled = true;
             txtIp.Enabled = true;
             txtMascara.Enabled = true;
             txtGateway.Enabled = true;
@@ -87,12 +87,12 @@ namespace Capa_Vista1
         public void LimpiarObjetos()
         {
             cmbEdificio.Text = "";
-            cmbMarca.Text = "";
-            cmbModelo.Text = "";
+            //cmbMarca.Text = "";
+            //cmbModelo.Text = "";
             txtHostName.Text = "";
             cmbSSID.Text = "";
-            txtSerie.Text = "";
-            txtMac.Text = "";
+            //txtSerie.Text = "";
+            //txtMac.Text = "";
             txtIp.Text = "";
             txtMascara.Text = "";
             txtGateway.Text = "";
@@ -112,12 +112,12 @@ namespace Capa_Vista1
             negRadios negradios = new negRadios();
             entRadio entradio = new entRadio();
             entradio.Edificio = Convert.ToInt32(cmbEdificio.SelectedValue);
-            entradio.Marca = Convert.ToInt32(cmbMarca.SelectedValue);
-            entradio.Modelo = Convert.ToInt32(cmbModelo.SelectedValue);
+            //entradio.Marca = Convert.ToInt32(cmbMarca.SelectedValue);
+            //entradio.Modelo = Convert.ToInt32(cmbModelo.SelectedValue);
             entradio.HostName = txtHostName.Text;
             entradio.SSID = Convert.ToInt32(cmbSSID.SelectedValue);
-            entradio.Serie = txtSerie.Text;
-            entradio.Mac = txtMac.Text;
+            //entradio.Serie = txtSerie.Text;
+            //entradio.Mac = txtMac.Text;
             entradio.Ip = txtIp.Text;
             entradio.Mascara = txtMascara.Text;
             entradio.Gateway = txtGateway.Text;
@@ -129,7 +129,7 @@ namespace Capa_Vista1
             }
             else
             {
-                entradio.idRadio = Convert.ToInt32(dgvRadios.CurrentRow.Cells["Clave"].Value.ToString());
+                //entradio.idRadio = Convert.ToInt32(dgvRadios.CurrentRow.Cells["Clave"].Value.ToString());
                 negradios.ActualizaDato(entradio);
             }
             InhabilitarObjetos();
@@ -140,18 +140,18 @@ namespace Capa_Vista1
         private void dgvRadios_SelectionChanged(object sender, EventArgs e)
         {
             LimpiarObjetos();
-            cmbEdificio.Text = dgvRadios.CurrentRow.Cells["Edificio"].Value.ToString();
-            cmbMarca.Text = dgvRadios.CurrentRow.Cells["Marca"].Value.ToString();
-            cmbModelo.Text = dgvRadios.CurrentRow.Cells["Modelo"].Value.ToString();
-            txtHostName.Text = dgvRadios.CurrentRow.Cells["HostName"].Value.ToString();
-            cmbSSID.Text = dgvRadios.CurrentRow.Cells["SSID"].Value.ToString();
-            txtSerie.Text = dgvRadios.CurrentRow.Cells["Serie"].Value.ToString();
-            txtMac.Text = dgvRadios.CurrentRow.Cells["Mac"].Value.ToString();
-            txtIp.Text = dgvRadios.CurrentRow.Cells["Ip"].Value.ToString();
-            txtMascara.Text = dgvRadios.CurrentRow.Cells["Mascara"].Value.ToString();
-            txtGateway.Text = dgvRadios.CurrentRow.Cells["Gateway"].Value.ToString();
-            cmbSeguridad.Text = dgvRadios.CurrentRow.Cells["Seguridad"].Value.ToString();
-            cmbModo.Text = dgvRadios.CurrentRow.Cells["Modo"].Value.ToString();
+            //cmbEdificio.Text = dgvRadios.CurrentRow.Cells["Edificio"].Value.ToString();
+            //cmbMarca.Text = dgvRadios.CurrentRow.Cells["Marca"].Value.ToString();
+            //cmbModelo.Text = dgvRadios.CurrentRow.Cells["Modelo"].Value.ToString();
+            //txtHostName.Text = dgvRadios.CurrentRow.Cells["HostName"].Value.ToString();
+            //cmbSSID.Text = dgvRadios.CurrentRow.Cells["SSID"].Value.ToString();
+            //txtSerie.Text = dgvRadios.CurrentRow.Cells["Serie"].Value.ToString();
+            //txtMac.Text = dgvRadios.CurrentRow.Cells["Mac"].Value.ToString();
+            //txtIp.Text = dgvRadios.CurrentRow.Cells["Ip"].Value.ToString();
+            //txtMascara.Text = dgvRadios.CurrentRow.Cells["Mascara"].Value.ToString();
+            //txtGateway.Text = dgvRadios.CurrentRow.Cells["Gateway"].Value.ToString();
+            //cmbSeguridad.Text = dgvRadios.CurrentRow.Cells["Seguridad"].Value.ToString();
+            //cmbModo.Text = dgvRadios.CurrentRow.Cells["Modo"].Value.ToString();
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -164,7 +164,7 @@ namespace Capa_Vista1
         {
             negRadios negradios = new negRadios();
             entRadio entradio = new entRadio();
-            entradio.idRadio = Convert.ToInt32(dgvRadios.CurrentRow.Cells["Clave"].Value.ToString());
+            //entradio.idRadio = Convert.ToInt32(dgvRadios.CurrentRow.Cells["Clave"].Value.ToString());
             negradios.EliminaDato(entradio);
         }
 
@@ -177,6 +177,11 @@ namespace Capa_Vista1
         private void cmbMarca_MouseClick(object sender, MouseEventArgs e)
         {
             LlenarCombos();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
